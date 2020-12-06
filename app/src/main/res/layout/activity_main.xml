@@ -5,20 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#1A0E30">
 
     <EditText
         android:id="@+id/xeditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="사이트 주소 입력"
+        android:background="#6B5B75"
+        android:layout_marginVertical="20dp"
         />
 
     <Button
         android:id="@+id/xbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="요청하기"/>
+        android:text="요청하기"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:background="#2DFFFFFF"
+        android:layout_marginTop="10dp"
+        />
 
     <ScrollView
         android:layout_width="match_parent"
